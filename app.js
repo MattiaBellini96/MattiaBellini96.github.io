@@ -16,7 +16,10 @@
   function paintToggle(btn) {
     var dark = currentTheme() === "dark";
     btn.textContent = dark ? "☀️" : "🌙";
-    btn.setAttribute("aria-label", dark ? "Passa al tema chiaro" : "Passa al tema scuro");
+    var en = (root.getAttribute("lang") || "it").slice(0, 2) === "en";
+    btn.setAttribute("aria-label", en
+      ? (dark ? "Switch to light theme" : "Switch to dark theme")
+      : (dark ? "Passa al tema chiaro" : "Passa al tema scuro"));
     btn.setAttribute("title", btn.getAttribute("aria-label"));
   }
   var toggle = document.getElementById("theme-toggle");
