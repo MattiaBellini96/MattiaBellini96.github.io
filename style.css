@@ -180,9 +180,6 @@ h2 { margin: 0 0 10px; font-size: clamp(26px, 3.6vw, 34px); letter-spacing: -.5p
 .step h3 { margin: 0 0 6px; font-size: 18px; }
 .step p { margin: 0; color: var(--muted); font-size: 15.5px; }
 
-.project { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
-.project p { margin: 6px 0 0; color: var(--muted); max-width: 38em; }
-.pill { display: inline-block; margin-top: 12px; padding: 3px 10px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); font-size: 13px; }
 
 /* Pagina di testo */
 .doc { max-width: 760px; padding: 64px 24px 80px; margin: 0 auto; }
