@@ -32,6 +32,22 @@
 
   var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  /* ---------- Barra di avanzamento scroll ---------- */
+  var bar = document.getElementById("progress");
+  if (bar) {
+    var tick = false;
+    window.addEventListener("scroll", function () {
+      if (tick) return;
+      tick = true;
+      requestAnimationFrame(function () {
+        var h = document.documentElement;
+        var max = h.scrollHeight - h.clientHeight;
+        bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + "%";
+        tick = false;
+      });
+    }, { passive: true });
+  }
+
   /* ---------- Comparsa graduale allo scroll ---------- */
   var reveals = document.querySelectorAll(".reveal");
   if (reduce || !("IntersectionObserver" in window)) {
