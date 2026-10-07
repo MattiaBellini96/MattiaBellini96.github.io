@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkyNet · Personal assistant on Telegram</title>
+  <meta name="description" content="SkyNet is a personal assistant that runs from Telegram: calendar, reminders, messages, research and automations, on a private server.">
+  <meta name="color-scheme" content="dark light">
+  <link rel="canonical" href="https://mattiabellini96.github.io/en/">
+  <link rel="alternate" hreflang="it" href="https://mattiabellini96.github.io/">
+  <link rel="alternate" hreflang="en" href="https://mattiabellini96.github.io/en/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SkyNet">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="it_IT">
+  <meta property="og:url" content="https://mattiabellini96.github.io/en/">
+  <meta property="og:title" content="SkyNet · An assistant that gets things done, not just talks">
+  <meta property="og:description" content="Commanded from Telegram in plain language: calendar, reminders, messages, research and automations, on a private server.">
+  <meta property="og:image" content="https://mattiabellini96.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SkyNet · An assistant that gets things done">
+  <meta name="twitter:description" content="Commanded from Telegram in plain language: calendar, reminders, messages, research and automations.">
+  <meta name="twitter:image" content="https://mattiabellini96.github.io/og-image.png">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235b9dff'/%3E%3Cstop offset='1' stop-color='%238f6bff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='13' fill='url(%23g)'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="dot"></span>SkyNet</a>
+    <div class="nav-right">
+      <nav class="menu">
+        <a href="#what">What it does</a>
+        <a href="#examples" class="hide-s">Examples</a>
+        <a href="#how" class="hide-s">How it works</a>
+        <a href="#faq" class="hide-s">FAQ</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+      <div class="tools">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle theme">🌙</button>
+        <span class="lang">
+          <a href="../">IT</a>
+          <a class="on" href="./" aria-current="page">EN</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="tag">Personal project · private use</span>
+        <h1>An assistant that <span class="grad">gets things done</span>, not just talks.</h1>
+        <p class="lead">SkyNet is a personal assistant you control from Telegram. It takes a request in plain language, carries it out on a private server, and reports what it actually did.</p>
+        <div class="actions">
+          <a class="btn primary" href="#what">See what it does</a>
+          <a class="btn" href="#examples">See examples</a>
+        </div>
+      </div>
+
+      <div class="chat reveal" aria-label="Example conversation">
+        <div class="chat-head">
+          <span class="dot"></span>
+          <div>SkyNet<small>online</small></div>
+        </div>
+        <div class="chat-body" id="chat-body">
+          <div class="msg me">Add Tuesday's meeting at 3pm and remind me the day before and 2 hours earlier.</div>
+          <div class="msg bot">Done. Calendar event on Tuesday at 15:00.</div>
+          <div class="msg bot">Reminders set: Monday 15:00 and Tuesday 13:00.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="what" class="alt">
+    <div class="wrap">
+      <h2 class="reveal">What it does</h2>
+      <p class="sub reveal">A single point of contact for the small errands of every day.</p>
+      <div class="grid">
+        <div class="card reveal">
+          <div class="ico">📅</div>
+          <h3>Calendar & reminders</h3>
+          <p>Creates Google Calendar events and sends reminders that keep nudging until you confirm them.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico">✉️</div>
+          <h3>Messages & email</h3>
+          <p>Drafts messages and emails and only sends them after an explicit confirmation.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico">🔎</div>
+          <h3>Web research</h3>
+          <p>Searches multiple sources, opens the pages and reports results with their original links.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico">📄</div>
+          <h3>Files & documents</h3>
+          <p>Reads PDFs, documents and images, extracts the text and converts files between formats.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico">⏱️</div>
+          <h3>Scheduled tasks</h3>
+          <p>Runs jobs at set times and keeps an eye on pages and prices, warning you when they change.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico">🎨</div>
+          <h3>Local images</h3>
+          <p>Generates images right on the server, without going through external services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="examples">
+    <div class="wrap">
+      <h2 class="reveal">What you can ask</h2>
+      <p class="sub reveal">Real sentences, written like you'd write to a person. No commands to learn.</p>
+      <div class="asks">
+        <div class="ask reveal"><span class="q">“</span>Remind me to call the dentist tomorrow at 9.</div>
+        <div class="ask reveal"><span class="q">“</span>What's the weather in Bologna on Saturday?</div>
+        <div class="ask reveal"><span class="q">“</span>Tell Luca on WhatsApp I'll be there around 8pm.</div>
+        <div class="ask reveal"><span class="q">“</span>Add Thursday's 3pm meeting to my calendar.</div>
+        <div class="ask reveal"><span class="q">“</span>Summarise this PDF in three points.</div>
+        <div class="ask reveal"><span class="q">“</span>Find the price of the Milan–Rome train on the 20th.</div>
+        <div class="ask reveal"><span class="q">“</span>Read me my latest unread emails.</div>
+        <div class="ask reveal"><span class="q">“</span>Generate an image of a lighthouse at sunset.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="alt">
+    <div class="wrap">
+      <h2 class="reveal">How it works</h2>
+      <p class="sub reveal">Three steps, always the same.</p>
+      <div class="steps">
+        <div class="step reveal">
+          <h3>A request</h3>
+          <p>You write on Telegram the way you'd write to a person, with no commands to remember.</p>
+        </div>
+        <div class="step reveal">
+          <h3>The action</h3>
+          <p>The assistant checks the real state of things, acts with the tools it has, and verifies the result.</p>
+        </div>
+        <div class="step reveal">
+          <h3>The report</h3>
+          <p>It replies with what it did, what it verified, and what's still open.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="made">
+    <div class="wrap">
+      <h2 class="reveal">How it's built</h2>
+      <p class="sub reveal">In short, without too much jargon.</p>
+      <div class="grid">
+        <div class="card reveal">
+          <div class="ico">💬</div>
+          <h3>Telegram as the interface</h3>
+          <p>No app to install: you talk to the assistant from the chat, on phone or computer.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico">🖥️</div>
+          <h3>Private server</h3>
+          <p>It runs on the owner's always-on machine, which carries out requests and keeps the history.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico">🧠</div>
+          <h3>AI models</h3>
+          <p>It uses AI models, some local on the server and some in the cloud, depending on the task.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico">🧩</div>
+          <h3>Sub-agents</h3>
+          <p>For bigger jobs it splits the task into parts and hands them to specialised helpers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy-sec" class="alt">
+    <div class="wrap">
+      <h2 class="reveal">Privacy by design</h2>
+      <p class="sub reveal">SkyNet is built for a single person, and it shows in the core choices.</p>
+      <div class="grid">
+        <div class="card reveal">
+          <div class="ico">🔒</div>
+          <h3>Private use</h3>
+          <p>It's not a public service: it works for its owner and that's it.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico">✅</div>
+          <h3>Confirm before sending</h3>
+          <p>Messages, emails and destructive actions only go out after an explicit go-ahead.</p>
+        </div>
+        <div class="card reveal">
+          <div class="ico">🚫</div>
+          <h3>No tracking</h3>
+          <p>This site uses no cookies, no analytics and no third-party resources.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <h2 class="reveal">Frequently asked</h2>
+      <p class="sub reveal">The things people usually ask first.</p>
+      <div class="faq">
+        <details class="reveal">
+          <summary>Can I use it too?</summary>
+          <p>No: SkyNet is a personal project, designed and configured for a single owner. It's not a public service and there's no sign-up.</p>
+        </details>
+        <details class="reveal">
+          <summary>Where does it run?</summary>
+          <p>On an always-on private server, reachable only by the owner through the Telegram chat. There's no website or app for anyone else to control it.</p>
+        </details>
+        <details class="reveal">
+          <summary>Who sees my data?</summary>
+          <p>Only the owner. Data stays on their server; to process a request its content may be sent to an AI model solely to get the answer. Details are in the <a href="privacy.html">privacy notice</a>.</p>
+        </details>
+        <details class="reveal">
+          <summary>How does it avoid sending things by mistake?</summary>
+          <p>It always prepares a draft and waits for an explicit go-ahead before sending messages, emails, or running actions that delete or change something.</p>
+        </details>
+        <details class="reveal">
+          <summary>How is it different from a voice assistant?</summary>
+          <p>It doesn't just answer: it checks the real state of things, acts with the tools it has, then verifies it actually got the result, telling you what it did.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Mattia Bellini</span>
+    <nav>
+      <a href="privacy.html">Privacy</a>
+      <a href="../">Italiano</a>
+      <a href="https://github.com/MattiaBellini96">GitHub</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="../app.js" defer></script>
+</body>
+</html>

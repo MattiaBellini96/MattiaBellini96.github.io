@@ -6,6 +6,7 @@
   <title>Norme sulla privacy · SkyNet</title>
   <meta name="description" content="Come SkyNet accede ai dati dell'account Google, come li usa e come revocare l'accesso.">
   <meta name="color-scheme" content="dark light">
+  <link rel="canonical" href="https://mattiabellini96.github.io/privacy.html">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,10 +14,19 @@
 <header class="top">
   <div class="wrap">
     <a class="brand" href="./"><span class="dot"></span>SkyNet</a>
-    <nav class="menu">
-      <a href="./">Home</a>
-      <a href="https://github.com/MattiaBellini96">GitHub</a>
-    </nav>
+    <div class="nav-right">
+      <nav class="menu">
+        <a href="./">Home</a>
+        <a href="https://github.com/MattiaBellini96">GitHub</a>
+      </nav>
+      <div class="tools">
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Cambia tema">🌙</button>
+        <span class="lang">
+          <a class="on" href="privacy.html" aria-current="page">IT</a>
+          <a href="en/privacy.html">EN</a>
+        </span>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -58,10 +68,12 @@
     <span>© 2026 Mattia Bellini</span>
     <nav>
       <a href="./">Home</a>
+      <a href="en/privacy.html">English</a>
       <a href="https://github.com/MattiaBellini96">GitHub</a>
     </nav>
   </div>
 </footer>
 
+<script src="app.js" defer></script>
 </body>
 </html>
